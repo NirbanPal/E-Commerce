@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Address{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+ <div class="row">
+ <h3>Welcome {{request.user.username|capfirst}}</h3>
+  <div class="col-sm-2 border-end">
+   <ul class="list-unstyled">
+    <li class="d-grid"><a href="/profile" class="btn">Profile</a></li>
+    <li class="d-grid"><a href="/address" class="btn {{active}}">Address</a></li>
+   </ul>
+  </div>
+  <div class="col-sm-9 offset-sm-1">
+   <div class="row">
+    {% for ad in address%}
+    <div class="col-sm-6">
+     <div class="card">
+      <div class="card-body">
+        <!-- here forloop.counter is used to count the number of iteration  -->
+       <h3>Address {{ forloop.counter}}</h3>
+       <p>Name: {{ad.name}}</p>
+       <p>Lacality: {{ad.locality}}</p>
+       <p>City: {{ad.city}}</p>
+       <p>PinCode: {{ad.zipcode}}</p>
+       <p>State: {{ad.state}}</p>
+      </div>
+     </div>
+    </div>
+    {% endfor %}
+   </div>
+  </div>
+ </div>
+</div>
+{% endblock main-content %}
