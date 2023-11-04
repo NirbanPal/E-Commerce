@@ -1,5 +1,5 @@
 # E-Commerce
-This is an e-commerce website where user can Register, login, logout ,buy products and there are also many features like tracking order, view carts etc. Here Owner also can keep track of total expense, profit, inventory and everything. Workers can do only create, update, delete and see the products to the inventory.
+This is an e-commerce website where users can Register, login, logout ,buy products and there are also many features like tracking order, view carts etc. Here Owner also can keep track of total expense, profit, inventory and everything. Workers can do only create, update, delete and see the products to the inventory.
 
 **Tech used->**
 <p>HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, AJAX, DJANGO, PYTHON, MYSQL, SQL, RAZORPAY API</p>
