@@ -32,7 +32,7 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
    <your_virtual_environment_name>\Scripts\activate
    ```
    
-8. Install requirements.py file->
+8. Install dependencies(requirements.py file)->
    
    ```python
    pip install -r requirements.py
