@@ -72,7 +72,7 @@
               </ul>
             </li>
             <li class="nav-item mx-2">
-             <a href="/cart" class="nav-link text-white"><span class="badge bg-danger">{{request.session.Cart}}</span> Cart </a>
+             <a href="/cart" class="nav-link text-white"><span class="badge bg-danger">{{request.user.get_cart_items_count}}</span> Cart </a>
             </li>
           {% else %} 
             <li class="nav-item mx-2">
@@ -95,7 +95,7 @@
 
     <!-- Start Footer -->
     <footer class="container-fluid bg-dark text-center p-2 mt-5">
-        <small class="text-white">Copyright &copy; 2021 || Designed By NIRI || </small>
+        <small class="text-white">Copyright &copy; 2022 || Designed By NIRI || </small>
         <img src="{% static 'images/payment.png' %}" alt="" srcset="" class="img-fluid" height="2px">
     </footer> <!-- End Footer -->
 

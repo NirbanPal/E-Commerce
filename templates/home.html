@@ -44,7 +44,13 @@
 {% endblock livesale %}
 
 {% block main-content %}
+{% if not mobile and not topwear and not bottomwear %}
+<div class="mx-3 my-3">
+  <center><h1>Owner has not uploaded any product yet. Try again later</h1></center>
+</div>
+{% else %}
 <!-- 1st Product Slider -->
+{% if bottomwear %}
 <div class="m-3">
   <h2>Bottom Wears</h2>
   <!-- Slider 1 -->
@@ -58,6 +64,7 @@
         {% endfor %}
     </div>  
 </div>
+{% endif %}
 <!-- End 1st Product Slider -->
 
 <!-- Payment Info Section -->
@@ -96,6 +103,7 @@
 <!-- End Payment Info Section -->
 
 <!-- 2nd Product Slider -->
+{% if topwear %}
 <div class="mx-3">
   <h2>Top Wears</h2>
   <!-- Slider 2 -->
@@ -109,8 +117,10 @@
     {% endfor %}
   </div>
 </div>
+{% endif %}
 <!-- End 2nd Product Slider -->
 
+{% if mobile %}
 <div class="mx-3">
   <h2>Mobiles</h2>
   <!-- Slider 3 -->
@@ -134,4 +144,6 @@
   </div>  
 
 </div>
+{% endif %}
+{% endif %}
 {% endblock main-content %}

@@ -97,6 +97,15 @@ class Cart(models.Model):
     @property
     def total_cost(self):
         return self.quantity * self.product.discounted_price
+    
+#To get the number of cart items for each user    
+def get_cart_items_count(self):
+    return Cart.objects.filter(user=self).count()
+
+# Patching the User model to include the new method
+User.add_to_class("get_cart_items_count", get_cart_items_count)
+    
+
            
 
 STATUS_CHOICES= (

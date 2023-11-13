@@ -23,7 +23,7 @@ STAT_DIR = os.path.join(BASE_DIR,"static")
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '<putYourDjangoSecretKey>'
+SECRET_KEY = 'xzo28!ol&cf9egue@2a8!h*1j&)4p_#co_p-owz(c4$a8u85x#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -134,11 +134,11 @@ LOGIN_REDIRECT_URL = '/profile/'
 
 LOGOUT_REDIRECT_URL = '/accounts/login/'
 
-EMAIL_BACKEND = 'django.core.mail.backend.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 SESSION_ENGINE ="django.contrib.sessions.backends.db"
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField' 
 
-KEY = '<RazorpayKey>'
-SECRET = '<RazorpaySecret>'
+KEY = 'rzp_test_UxCyA68kej5Uxv'
+SECRET = 'F7Wc84e6iRqi03WNanuy6W3B'
