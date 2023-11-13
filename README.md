@@ -19,7 +19,7 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
    
 3. Put your django secret key in the settings.py SECRET_KEY section.
 
-5. After creating an account in Razorpay. Generate a razorpay key and secretid(Here we are using the razorpay api for tesing purpose. You also can use paid api). Use that key and secret id in the settings.py file as mentiond. Go through the documentation of razor pay for better understanding.     
+5. After creating an account in Razorpay. Generate a razorpay key and secretid(Here we are using the razorpay api for tesing purpose. You also can use paid api). Use that key and secret id in the settings.py and checkout.html(under templete folder) file as mentiond. Go through the documentation of razor pay for better understanding.     
    
 6. Create virtual environment->
    
