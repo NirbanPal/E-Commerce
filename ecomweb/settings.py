@@ -23,7 +23,7 @@ STAT_DIR = os.path.join(BASE_DIR,"static")
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = 'PutYourDjangoSecretkey'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -140,5 +140,5 @@ SESSION_ENGINE ="django.contrib.sessions.backends.db"
 
 DEFAULT_AUTO_FIELD='django.db.models.AutoField' 
 
-KEY = ''
-SECRET = ''
+KEY = 'putYourRazorpayKey'
+SECRET = 'putYourRazorpaySecretid'
