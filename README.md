@@ -37,8 +37,21 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
    ```python
    pip install -r requirements.txt
    ```
+9.  Configure yourdatabase->
+    ```python
+    DATABASES = {
+        'default': {
+            'ENGINE':'<yourenginename>',
+            'NAME':'<nameOfYourDB>',
+            'USER':'<username>',
+            'PASSWORD':'<password>',
+            'HOST':'localhost',
+            'PORT': <port>,
+        }
+    }
+    ```
 
-9. Migrate your database->
+11. Migrate your database->
 
    ```python
    python manage.py makemigrations
@@ -48,7 +61,7 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
    python manage.py migrate
    ```
 
-10. To access the admin panel you have to create an account as superuser by giving a username and password->
+11. To access the admin panel you have to create an account as superuser by giving a username and password->
     
     ```python
     py manage.py createsuperuser
