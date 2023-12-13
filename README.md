@@ -2,7 +2,7 @@
 This is an e-commerce website where users can Register, login, logout ,buy products and there are also many features like tracking order, view carts etc. Here Owner also can keep track of total expense, profit, inventory and everything. Workers can do only create, update, delete and see the products to the inventory.
 
 **Tech used->**
-<p>HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, AJAX, DJANGO, PYTHON, MYSQL, SQL, RAZORPAY API</p>
+<p>HTML, CSS, BOOTSTRAP, JAVASCRIPT, JQUERY, AJAX, DJANGO, PYTHON, MARIA DB, HEIDISQL, RAZORPAY API</p>
 
 ### To run this Ecom website in your local computer follow the steps below and run the commands:
 
@@ -37,7 +37,8 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
    ```python
    pip install -r requirements.txt
    ```
-9.  Configure yourdatabase->
+   
+10.  Create a database and Configure your database here->
     ```python
     DATABASES = {
         'default': {
