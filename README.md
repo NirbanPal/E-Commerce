@@ -35,7 +35,7 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
 8. Install dependencies(requirements.py file)->
    
    ```python
-   pip install -r requirements.py
+   pip install -r requirements.txt
    ```
 
 9. Migrate your database->
