@@ -41,12 +41,12 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
     ```python
     DATABASES = {
         'default': {
-            'ENGINE':'<yourenginename>',
-            'NAME':'<nameOfYourDB>',
-            'USER':'<username>',
-            'PASSWORD':'<password>',
+            'ENGINE':'yourenginename',
+            'NAME':'nameOfYourDB',
+            'USER':'username',
+            'PASSWORD':'password',
             'HOST':'localhost',
-            'PORT': <port>,
+            'PORT': <portNumber>,
         }
     }
     ```
