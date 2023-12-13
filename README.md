@@ -19,26 +19,26 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
    
 3. Put your django secret key in the settings.py SECRET_KEY section.
 
-5. After creating an account in Razorpay. Generate a razorpay key and secretid(Here we are using the razorpay api for tesing purpose. You also can use paid api). Use that key and secret id in the settings.py and checkout.html(under templete folder) file as mentiond. Go through the documentation of razor pay for better understanding.     
+4. After creating an account in Razorpay. Generate a razorpay key and secretid(Here we are using the razorpay api for tesing purpose. You also can use paid api). Use that key and secret id in the settings.py and checkout.html(under templete folder) file as mentiond. Go through the documentation of razor pay for better understanding.     
    
-6. Create virtual environment->
+5. Create virtual environment->
    
    ```python
    python -m venv <your_virtual_environment_name>
    ```
-7. To activate your virtual environment(windows)->
+6. To activate your virtual environment(windows)->
 
    ```python
    <your_virtual_environment_name>\Scripts\activate
    ```
    
-8. Install dependencies(requirements.py file)->
+7. Install dependencies(requirements.py file)->
    
    ```python
    pip install -r requirements.txt
    ```
    
-10. Create a database and Configure your database here->
+8. Create a database and Configure your database here->
     
     ```python
     DATABASES = {
@@ -53,7 +53,7 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
     }
     ```
 
-12. Migrate your database->
+9. Migrate your database->
 
    ```python
    python manage.py makemigrations
@@ -63,14 +63,17 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
    python manage.py migrate
    ```
 
-11. To access the admin panel you have to create an account as superuser by giving a username and password->
+10. To access the admin panel you have to create an account as superuser by giving a username and password->
     
     ```python
     py manage.py createsuperuser
     ```
 
-12. To run the application in your local machine->
+11. To run the application in your local machine->
    
    ```python
    python manage.py runserver
    ```
+12. As an admin go to /admin and login to the admin portal by using credentials and add products accoring to your wish. If there is anyone who is working under the admin. Admin can authorize him as staff and give him permissions according to the admin's requirements. Admin can customize the permissions also.
+        
+
