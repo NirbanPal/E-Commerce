@@ -117,7 +117,7 @@ Furthermore, the administrative control extends to the workforce, where the owne
 <p>⦿ Checkout Page</p>
 <img src="https://i.ibb.co/87QC4wh/screencapture-127-0-0-1-8000-checkout-2023-12-13-23-39-03.png" alt="screencapture-127-0-0-1-8000-checkout-2023-12-13-23-39-03" border="0">
 <p>⦿ Payment Gateway Page</p>
-<img src="https://i.ibb.co/DbWY1nW/screencapture-127-0-0-1-8000-checkout-2023-12-13-23-40-14.png" alt="screencapture-127-0-0-1-8000-checkout-2023-12-13-23-40-14" border="0">
+<img src="https://i.ibb.co/SJN74yL/screencapture-127-0-0-1-8000-checkout-2023-12-14-03-13-19.png" alt="screencapture-127-0-0-1-8000-checkout-2023-12-14-03-13-19" border="0">
 <p>⦿ My order page With order status</p>
 <img src="https://i.ibb.co/tCDjwtm/screencapture-127-0-0-1-8000-orders-2023-12-13-23-41-55.png" alt="screencapture-127-0-0-1-8000-orders-2023-12-13-23-41-55" border="0">
 <img src="https://i.ibb.co/99F6Fbh/screencapture-127-0-0-1-8000-orders-2023-12-14-03-03-14.png" alt="screencapture-127-0-0-1-8000-orders-2023-12-14-03-03-14" border="0">
