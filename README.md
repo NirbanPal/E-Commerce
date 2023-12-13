@@ -14,7 +14,7 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
 2. Go to the directory->
 
    ```git
-   cd <directory>
+   cd E-Commerce
    ```
    
 3. Put your django secret key in the settings.py SECRET_KEY section.
