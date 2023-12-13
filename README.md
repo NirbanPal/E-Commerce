@@ -9,7 +9,7 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
 1. Clone this git repo->
 
   ```git
-  git clone <gitRepoLink>
+  git clone https://github.com/NirbanPal/E-Commerce.git
   ```
 2. Go to the directory->
 
