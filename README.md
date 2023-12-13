@@ -38,7 +38,8 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
    pip install -r requirements.txt
    ```
    
-10.  Create a database and Configure your database here->
+10. Create a database and Configure your database here->
+    
     ```python
     DATABASES = {
         'default': {
@@ -52,7 +53,7 @@ This is an e-commerce website where users can Register, login, logout ,buy produ
     }
     ```
 
-11. Migrate your database->
+12. Migrate your database->
 
    ```python
    python manage.py makemigrations
