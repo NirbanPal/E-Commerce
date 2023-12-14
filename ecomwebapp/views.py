@@ -19,12 +19,6 @@ import razorpay
 from django.conf import settings
 
 
-
-
-# Create your views here.
-# def home(request):
-#  return render(request, 'home.html')
-
 class ProductView(View):
     def get(self,request):
         top_wear = Product.objects.filter( catagoty = 'TW')
@@ -39,11 +33,6 @@ class ProductView(View):
 
         return render(request,'home.html',context)
 
-
-
-# def product_detail(request):
-#     return render(request, 'productdetail.html')
-# Using Q objects we can make complex queries with less and simple code.
 class ProductDetailView(View):
     def get(self,request,pk):
         productdetail = Product.objects.get(pk=pk)
@@ -64,7 +53,6 @@ def add_to_cart(request,id):
     product_id = Product.objects.get(id=id)
     print(product_id)
     Cart(user=user,product=product_id).save()
-    # cartcomponent = Cart(user=request.user,product=id,)
 
     return redirect('/cart')
 
@@ -117,7 +105,6 @@ def plus_cart(request):
             'cart_quant' : cart_prod.quantity,
             'amount': amount
         }
-        # data_info = json.loads(data)
         return JsonResponse(data)
 
 
@@ -145,7 +132,6 @@ def minus_cart(request):
             'cart_quant' : cart_prod.quantity,
             'amount': amount
         }
-        # data_info = json.loads(data)
         return JsonResponse(data)    
 
 
@@ -171,24 +157,12 @@ def remove_cart(request):
             'total_amount': total_amount,
             'amount': amount
         }
-        # data_info = json.loads(data)
         return JsonResponse(data)        
-
-
-
-
-
-
-
 
 
 def buy_now(request):
  return render(request, 'buynow.html')
 
-# def profile(request):
-#  return render(request, 'profile.html')
-
-#here name="dispatch" is used to redited to the login page.at first login the page then use that 
 @method_decorator(login_required,name='dispatch')
 class ProfileView(View):
     def get(self,request):
@@ -212,11 +186,6 @@ class ProfileView(View):
             reg.save()
             messages.success(request,"Congtatulations!! your Profile Details is saved")
 
-
-
-        # we also can do this thing by below comment out method for betterment i will use diff method here
-        #     messages.success(request,"Congtatulations!! you Profile Details is saved")
-        #     form.save()
         return render(request,'profile.html',{'form':form , 'active':'btn-success'})  
      
       
@@ -240,27 +209,19 @@ def orders(request):
 
     return render(request, 'orders.html',{'placed_orders':placed_orders})
 
-# def change_password(request):
-#  return render(request, 'changepassword.html')
 
 def mobile(request,data='None'):
     mobile_brands = Product.objects.filter(catagoty='M').values('brand').distinct()
+    mobiles=""
     if data == 'None':
         mobiles = Product.objects.filter(catagoty='M')
-    elif data=='Moto' or data=='OnePlus' or data=='Realme' or data=='MI':
+    elif data=='Moto' or data=='SAMSUNG' or data=='NOKIA' or data=='OPPO' or data=='Xiomi':
         mobiles = Product.objects.filter(catagoty = 'M').filter(brand=data)     
     context = {
         'mobiles': mobiles,
         'mobile_brands': mobile_brands,
     }    
     return render(request, 'mobile.html', context)
-
-# def login(request):
-#  return render(request, 'login.html') # here we are directly login by hitting url you can write here login function for that but we are using default login function(basically class here) in the url  or after hitting the url.
-
-
-# def customerregistration(request):
-#  return render(request, 'customerregistration.html')
 
 class CustomerRegistrationView(View):
     def get(self,request):
@@ -293,10 +254,6 @@ def checkout(request):
     client = razorpay.Client(auth = (settings.KEY , settings.SECRET))
     payment = client.order.create({'amount': total_amount * 100,'currency':'INR','payment_capture': 1})
 
-
-    print("******")
-    print(payment)
-    print("*******")
     context ={
         'address': address,
         'cartitems': cart_items,
