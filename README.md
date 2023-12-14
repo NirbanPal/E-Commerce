@@ -89,6 +89,9 @@ Furthermore, the administrative control extends to the workforce, where the owne
 12. As an administrator, access to the admin portal can be attained by navigating to the designated URL, typically located at "http://127.0.0.1:8000/admin" Upon entering valid credentials, a secure login to the admin portal is established, affording the administrator exclusive control over product management. In instances where additional personnel operate under the administrator's purview, the admin holds the authority to designate them as staff members.
     <p>The empowerment to customize and assign permissions to each staff member aligns with the administrator's discerning requirements. This dynamic functionality enables a tailored approach, granting staff members specific privileges in product-related tasks. The ability to fine-tune and customize permissions ensures a nuanced delegation of responsibilities within the administrative ecosystem, fostering optimal efficiency and operational control.</p>
 
+**➤ Click this for the demo of this website/project :**
+     <p><a href="https://youtu.be/AgzthfV_qsI"><img src="https://i.ibb.co/3dB0m57/Screenshot-2023-12-14-222253.png" alt="Screenshot-2023-12-14-182003" border="0"></a></p>
+     
 **➤ Glimpses of DesiBazar Ecom Website :**
 <p>⦿ Home page for user(Not logged in)</p>
 <img src="https://i.ibb.co/bgcD8mz/screencapture-127-0-0-1-8000-2023-12-14-00-10-37-1.png" alt="screencapture-127-0-0-1-8000-2023-12-14-00-10-37-1" border="0">
