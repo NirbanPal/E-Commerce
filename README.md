@@ -128,7 +128,7 @@ Furthermore, the administrative control extends to the workforce, where the owne
 <img src="https://i.ibb.co/jwpwDbs/screencapture-127-0-0-1-8000-orders-2023-12-14-03-02-07.png" alt="screencapture-127-0-0-1-8000-orders-2023-12-14-03-02-07" border="0">
 <p>⦿ Admin Login Page</p>
 <img src="https://i.ibb.co/hXtPdp5/screencapture-127-0-0-1-8000-admin-login-2023-12-14-01-45-52.png" alt="screencapture-127-0-0-1-8000-admin-login-2023-12-14-01-45-52" border="0">
-<p>⦿ Glimpses of Admin Page(Have many functionality)</p>
+<p>⦿ Glimpses of Admin Page(Has many functionality)</p>
 <img src="https://i.ibb.co/Jc65dSg/screencapture-127-0-0-1-8000-admin-ecomwebapp-orderplaces-2023-12-14-01-48-09.png" alt="screencapture-127-0-0-1-8000-admin-ecomwebapp-orderplaces-2023-12-14-01-48-09" border="0">
 
 
